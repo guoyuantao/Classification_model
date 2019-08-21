@@ -9,5 +9,5 @@ Implement all convolutional neural networks
 * Gradient-Based Learning Applied to Document Recognition (Y. LeCun -1998)
 
 **Paper Collection：**
-* [Paper](https://pan.baidu.com/s/1EuzBHwN-BIr0rpfltu0TvQ)
+* [Paper](https://pan.baidu.com/s/1ihdzQpCABklehr7g2pcXoQ)
 * E-mail：gyt0713@126.com
