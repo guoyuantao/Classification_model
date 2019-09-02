@@ -12,6 +12,12 @@ Implement all convolutional neural networks
 **AlexNet：**
 * ImageNet Classification with Deep Convolutional Neural Networks (Alex Krizhevsky -2012)
 
+**ZFNet：**
+* Visualizing and Understanding Convolutional Networks (Matthew D. Zeiler -2013)
+
+**GoogleLeNet：**
+* Going deeper with convolutions (Christian Szegedy -2014)
+
 **VGGNet：**
 * Very Deep Convolutional Network For Large-Scale Image Recognition (Karen Simonyan -2015)
 
