@@ -9,6 +9,12 @@ Implement all convolutional neural networks
 * Gradient-Based Learning Applied to Document Recognition (Y. LeCun -1998)
 * [Note](https://blog.csdn.net/gyt15663668337/article/details/100084222)
 
+**AlexNet：**
+* ImageNet Classification with Deep Convolutional Neural Networks (Alex Krizhevsky -2012)
+
+**VGGNet：**
+* Very Deep Convolutional Network For Large-Scale Image Recognition (Karen Simonyan -2015)
+
 **Paper Collection：**
 * [Paper](https://pan.baidu.com/s/1ihdzQpCABklehr7g2pcXoQ)
 * E-mail：gyt0713@126.com
