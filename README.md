@@ -11,6 +11,7 @@ Implement all convolutional neural networks
 
 **AlexNet：**
 * ImageNet Classification with Deep Convolutional Neural Networks (Alex Krizhevsky -2012)
+* [Note](https://blog.csdn.net/gyt15663668337/article/details/100567009)
 
 **ZFNet：**
 * Visualizing and Understanding Convolutional Networks (Matthew D. Zeiler -2013)
