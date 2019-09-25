@@ -16,11 +16,14 @@ Implement all convolutional neural networks
 **ZFNet：**
 * Visualizing and Understanding Convolutional Networks (Matthew D. Zeiler -2013)
 
+**NIN：**
+* Network In Network (Min Lin -2014)
+
 **GoogleLeNet：**
 * Going deeper with convolutions (Christian Szegedy -2014)
 
 **VGGNet：**
-* Very Deep Convolutional Network For Large-Scale Image Recognition (Karen Simonyan -2015)
+* Very Deep Convolutional Network For Large-Scale Image Recognition (Karen Simonyan -2014)
 
 **Paper Collection：**
 * [Paper](https://pan.baidu.com/s/1mkm8hen1Zb2prl96q3s-1A)
