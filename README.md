@@ -23,5 +23,5 @@ Implement all convolutional neural networks
 * Very Deep Convolutional Network For Large-Scale Image Recognition (Karen Simonyan -2015)
 
 **Paper Collection：**
-* [Paper](https://pan.baidu.com/s/1ihdzQpCABklehr7g2pcXoQ)
+* [Paper](https://pan.baidu.com/s/1mkm8hen1Zb2prl96q3s-1A)
 * E-mail：gyt0713@126.com
