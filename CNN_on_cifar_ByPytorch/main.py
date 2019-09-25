@@ -7,10 +7,8 @@ from torch import nn, optim
 
 from lenet5 import Lenet5
 from alexnet import Alexnet
-from vgg16 import VGG16
-from vgg19 import VGG19
-from resnet18 import ResNet18
-from goolenet_v1 import GoogLeNet_v1
+from zfnet import ZFNet
+from nin import NIN
 def main():
     '''
     主函数
@@ -44,15 +42,15 @@ def main():
     print("Train Length: ", len(cifar_train.dataset), "Test Length: ", len(cifar_test.dataset))
 
     # 将模型转移到GPU上
-    device = torch.device('cuda')
+    device = torch.device('cpu')
 
     # ============== 此处更换模型 ==================
     # model = Lenet5().to(device)
     # model = Alexnet().to(device)
+    # model = ZFNet().to(device)
+    model = NIN().to(device)
     # model = VGG16().to(device)
     # model = VGG19().to(device)
-    # model = ResNet18().to(device)
-    model = GoogLeNet_v1().to(device)
     # ============================================
 
     # 优化器与损失值
