@@ -23,10 +23,11 @@ Implement all convolutional neural networks
 
 **GoogleLeNet：**
 * Going deeper with convolutions (Christian Szegedy -2014)
+* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/101370687)
 
 **VGGNet：**
 * Very Deep Convolutional Network For Large-Scale Image Recognition (Karen Simonyan -2014)
-* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/101386547)
+* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/101440742)
 
 **Paper Collection：**
 * [Paper](https://pan.baidu.com/s/1mkm8hen1Zb2prl96q3s-1A)
