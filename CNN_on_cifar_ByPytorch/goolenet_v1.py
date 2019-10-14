@@ -1,91 +1,132 @@
 import torch
-from torch import nn
+import torch.nn as nn
+import torchvision
 
-class Inception(nn.Module):
-    def __init__(self, in_ch, branch_ch_1, branch_ch_2_1, branch_ch_2_2, branch_ch_3_1, branch_ch_3_2, branch_ch_4):
-        super(Inception, self).__init__()
+def ConvReLU(in_channels,out_channels,kernel_size):
+    return nn.Sequential(
+        nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=kernel_size, stride=1, padding=kernel_size//2),
+        nn.ReLU(inplace=True)
+    )
 
-        # Inception结构
-        self.branch1 = nn.Sequential(
-            nn.Conv2d(in_ch, branch_ch_1, kernel_size=1)
-        )
-        self.branch2 = nn.Sequential(
-            nn.Conv2d(in_ch, branch_ch_2_1, kernel_size=1, stride=1, padding=0),
-            nn.Conv2d(branch_ch_2_1, branch_ch_2_2, kernel_size=3, stride=1, padding=1),
-        )
-        self.branch3 = nn.Sequential(
-            nn.Conv2d(in_ch, branch_ch_3_1, kernel_size=1, stride=1, padding=1),
-            nn.Conv2d(branch_ch_3_1, branch_ch_3_2, kernel_size=5, stride=1, padding=1),
-        )
-        self.branch4 = nn.Sequential(
-            nn.MaxPool2d(kernel_size=3, stride=1),
-            nn.Conv2d(in_ch, branch_ch_4, kernel_size=1, padding=1),
-        )
+class InceptionModule(nn.Module):
+    def __init__(self, in_channels,out_channels1, out_channels2reduce,out_channels2, out_channels3reduce, out_channels3, out_channels4):
+        super(InceptionModule, self).__init__()
+
+        self.branch1_conv = ConvReLU(in_channels=in_channels,out_channels=out_channels1,kernel_size=1)
+
+        self.branch2_conv1 = ConvReLU(in_channels=in_channels,out_channels=out_channels2reduce,kernel_size=1)
+        self.branch2_conv2 = ConvReLU(in_channels=out_channels2reduce,out_channels=out_channels2,kernel_size=3)
+
+        self.branch3_conv1 = ConvReLU(in_channels=in_channels, out_channels=out_channels3reduce, kernel_size=1)
+        self.branch3_conv2 = ConvReLU(in_channels=out_channels3reduce, out_channels=out_channels3, kernel_size=5)
+
+        self.branch4_pool = nn.MaxPool2d(kernel_size=3,stride=1,padding=1)
+        self.branch4_conv1 = ConvReLU(in_channels=in_channels, out_channels=out_channels4, kernel_size=1)
+
+    def forward(self,x):
+        out1 = self.branch1_conv(x)
+        out2 = self.branch2_conv2(self.branch2_conv1(x))
+        out3 = self.branch3_conv2(self.branch3_conv1(x))
+        out4 = self.branch4_conv1(self.branch4_pool(x))
+        out = torch.cat([out1, out2, out3, out4], dim=1)
+        return out
+
+class InceptionAux(nn.Module):
+    def __init__(self, in_channels,out_channels):
+        super(InceptionAux, self).__init__()
+
+        self.auxiliary_avgpool = nn.AvgPool2d(kernel_size=5, stride=3)
+        self.auxiliary_conv1 = ConvReLU(in_channels=in_channels, out_channels=128, kernel_size=1)
+        self.auxiliary_linear1 = nn.Linear(in_features=128 * 4 * 4, out_features=1024)
+        self.auxiliary_relu = nn.ReLU(inplace=True)
+        self.auxiliary_dropout = nn.Dropout(p=0.7)
+        self.auxiliary_linear2 = nn.Linear(in_features=1024, out_features=out_channels)
 
     def forward(self, x):
-        x1 = self.branch1(x)
-        x2 = self.branch2(x)
-        x3 = self.branch3(x)
-        x4 = self.branch4(x)
+        x = self.auxiliary_conv1(self.auxiliary_avgpool(x))
+        x = x.view(x.size(0), -1)
+        x= self.auxiliary_relu(self.auxiliary_linear1(x))
+        out = self.auxiliary_linear2(self.auxiliary_dropout(x))
+        return out
 
-        # 输出连接
-        x = torch.cat([x1, x2, x3, x4], 1)
+class GooLeNet_v1(nn.Module):
+    def __init__(self, num_classes=1000, stage='train'):
+        super(GooLeNet_v1, self).__init__()
+        self.stage = stage
 
-        return x
-
-class GoogLeNet_v1(nn.Module):
-    def __init__(self):
-        super(GoogLeNet_v1, self).__init__()
-        self.conv1 = nn.Sequential(
-            nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3),
+        self.block1 = nn.Sequential(
+            nn.Conv2d(in_channels=3,out_channels=64,kernel_size=7,stride=2,padding=3),
+            nn.MaxPool2d(kernel_size=3,stride=2, padding=1),
+            nn.Conv2d(in_channels=64, out_channels=64, kernel_size=1, stride=1),
+        )
+        self.block2 = nn.Sequential(
+            nn.Conv2d(in_channels=64, out_channels=192, kernel_size=3, stride=1, padding=1),
             nn.MaxPool2d(kernel_size=3, stride=2, padding=1),
         )
-        self.conv2 = nn.Sequential(
-            nn.Conv2d(64, 192, kernel_size=3, stride=1, padding=1),
-            nn.MaxPool2d(kernel_size=2, stride=1, padding=1),
+
+        self.block3 = nn.Sequential(
+            InceptionModule(in_channels=192,out_channels1=64, out_channels2reduce=96, out_channels2=128, out_channels3reduce = 16, out_channels3=32, out_channels4=32),
+            InceptionModule(in_channels=256, out_channels1=128, out_channels2reduce=128, out_channels2=192,out_channels3reduce=32, out_channels3=96, out_channels4=64),
+            nn.MaxPool2d(kernel_size=3, stride=2, padding=1),
         )
-        self.inception_3 = nn.Sequential(
-            Inception(192, 64, 96, 128, 16, 32, 32),
-            Inception(256, 128, 128, 192, 32, 96, 64),
-            nn.MaxPool2d(kernel_size=2, stride=1, padding=1),
+
+        self.block4_1 = InceptionModule(in_channels=480, out_channels1=192, out_channels2reduce=96, out_channels2=208,out_channels3reduce=16, out_channels3=48, out_channels4=64)
+
+        if self.stage == 'train':
+            self.aux_logits1 = InceptionAux(in_channels=512, out_channels=num_classes)
+
+        self.block4_2 = nn.Sequential(
+            InceptionModule(in_channels=512, out_channels1=160, out_channels2reduce=112, out_channels2=224,
+                              out_channels3reduce=24, out_channels3=64, out_channels4=64),
+            InceptionModule(in_channels=512, out_channels1=128, out_channels2reduce=128, out_channels2=256,
+                              out_channels3reduce=24, out_channels3=64, out_channels4=64),
+            InceptionModule(in_channels=512, out_channels1=112, out_channels2reduce=144, out_channels2=288,
+                              out_channels3reduce=32, out_channels3=64, out_channels4=64),
         )
-        self.inception_4 = nn.Sequential(
-            Inception(480, 192, 96, 208, 16, 48, 64),
-            Inception(512, 160, 112, 224, 24, 64, 64),
-            Inception(512, 128, 128, 256, 24, 64, 64),
-            Inception(512, 112, 144, 288, 32, 64, 64),
-            Inception(528, 256, 160, 320, 32, 128, 128),
-            nn.MaxPool2d(kernel_size=2, stride=1, padding=1),
+
+        if self.stage == 'train':
+            self.aux_logits2 = InceptionAux(in_channels=528,out_channels=num_classes)
+
+        self.block4_3 = nn.Sequential(
+            InceptionModule(in_channels=528, out_channels1=256, out_channels2reduce=160, out_channels2=320,
+                              out_channels3reduce=32, out_channels3=128, out_channels4=128),
+            nn.MaxPool2d(kernel_size=3, stride=2, padding=1),
         )
-        self.inception_5 = nn.Sequential(
-            Inception(832, 256, 160, 320, 32, 128, 128),
-            Inception(832, 384, 192, 384, 48, 128, 128),
+
+        self.block5 = nn.Sequential(
+            InceptionModule(in_channels=832, out_channels1=256, out_channels2reduce=160, out_channels2=320, out_channels3reduce=32, out_channels3=128, out_channels4=128),
+            InceptionModule(in_channels=832, out_channels1=384, out_channels2reduce=192, out_channels2=384, out_channels3reduce=48, out_channels3=128, out_channels4=128),
         )
-        self.avg_pool = nn.AvgPool2d(kernel_size=7, stride=1)
-        self.droput = nn.Dropout(p=0.4)
-        self.linear = nn.Linear(1024*5*5, 10)
+
+        self.avgpool = nn.AvgPool2d(kernel_size=7, stride=1)
+        self.dropout = nn.Dropout(p=0.4)
+        self.linear = nn.Linear(in_features=1024, out_features=num_classes)
 
     def forward(self, x):
-        # 卷积操作
-        x = self.conv1(x)
-        # 卷积操作
-        x = self.conv2(x)
-        # 第一个inception块
-        x = self.inception_3(x)
-        # 第二个inception块
-        x = self.inception_4(x)
-        # 第三个inception块
-        x = self.inception_5(x)
-        # 平均池化
-        x = self.avg_pool(x)
-        # 连续两个缩减维度
-        x = torch.squeeze(x, dim=-1)
-        x = torch.squeeze(x, dim=-1)
-        # 随机失活
-        x = self.droput(x)
-        x = x.view(x.size(0), -1)
-        # 线性层
-        x = self.linear(x)
+        x = self.block1(x)
+        x = self.block2(x)
+        x = self.block3(x)
+        aux1 = x = self.block4_1(x)
+        aux2 = x = self.block4_2(x)
+        x = self.block4_3(x)
+        out = self.block5(x)
+        out = self.avgpool(out)
+        out = self.dropout(out)
+        out = out.view(out.size(0), -1)
+        out = self.linear(out)
+        if self.stage == 'train':
+            aux1 = self.aux_logits1(aux1)
+            aux2 = self.aux_logits2(aux2)
+            return aux1, aux2, out
+        else:
+            return out
 
-        return x
+if __name__=='__main__':
+    model = GooLeNet_v1()
+    print(model)
 
+    input = torch.randn(1, 3, 224, 224)
+    aux1, aux2, out = model(input)
+    print(aux1.shape)
+    print(aux2.shape)
+    print(out.shape)
