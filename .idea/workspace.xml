@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf7e13da-6e72-4c5a-81a1-78901f3f0406" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/16_ResNetXt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/11_Stochastic_Depth_ResNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/11_Stochastic_Depth_ResNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/12_WideResNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/12_WideResNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/13_Inception_v4.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/13_Inception_v4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/15_fractalnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/15_fractalnet.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet_v2.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/10_resnet_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="73" column="53" lean-forward="true" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
+            <state relative-caret-position="232">
+              <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -28,11 +30,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet_v1.py">
+        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/11_Stochastic_Depth_ResNet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2106">
+            <state relative-caret-position="4212">
+              <caret line="226" column="16" lean-forward="true" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/12_WideResNet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/13_Inception_v4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="224" column="38" lean-forward="true" selection-start-line="224" selection-start-column="38" selection-end-line="224" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/14_Inception_ResNet_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2851">
+              <caret line="284" column="20" lean-forward="true" selection-start-line="284" selection-start-column="20" selection-end-line="284" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/15_fractalnet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4282">
+              <caret line="210" column="18" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/16_ResNetXt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="98" column="34" lean-forward="true" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,6 +121,15 @@
         <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/t.py" />
         <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/goolenet_v3.py" />
         <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet_v2.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/new.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/11_Stochastic_Depth_ResNet.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/10_resnet_v2.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/12_WideResNet.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/14_Inception_ResNet_v1.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/13_Inception_v4.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/15_Inception_ResNet_v2.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/15_fractalnet.py" />
+        <option value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/16_ResNetXt.py" />
       </list>
     </option>
   </component>
@@ -106,8 +178,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.resnet_v2">
-    <configuration name="goolenet_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.new">
+    <configuration name="12_WideResNet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CNN_Model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,7 +191,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/goolenet_v1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/12_WideResNet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,7 +200,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="goolenet_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="13_Inception_v4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CNN_Model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,7 +212,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/goolenet_v2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/13_Inception_v4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -149,7 +221,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="goolenet_v3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="15_Inception_ResNet_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CNN_Model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -161,7 +233,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/goolenet_v3.py" />
+      <option name="SCRIPT_NAME" value="G:\CNN_Model\CNN_on_cifar_ByPytorch\14_Inception_ResNet_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,7 +242,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="resnet_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="16_ResNetXt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CNN_Model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -182,7 +254,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet_v2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/16_ResNetXt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,7 +263,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="t" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="new" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CNN_Model" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,7 +275,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/t.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_on_cifar_ByPytorch/new.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,11 +286,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.resnet_v2" />
-        <item itemvalue="Python.goolenet_v3" />
-        <item itemvalue="Python.t" />
-        <item itemvalue="Python.goolenet_v2" />
-        <item itemvalue="Python.goolenet_v1" />
+        <item itemvalue="Python.new" />
+        <item itemvalue="Python.16_ResNetXt" />
+        <item itemvalue="Python.15_Inception_ResNet_v2" />
+        <item itemvalue="Python.13_Inception_v4" />
+        <item itemvalue="Python.12_WideResNet" />
       </list>
     </recent_temporary>
   </component>
@@ -237,18 +309,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13688213" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.12927757" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32884097" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.15902965" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.4056604" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.61051214" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -258,16 +329,20 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/12_WideResNet.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="525" selection-start-line="525" selection-end-line="525" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/t.py" />
-    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/goolenet_v3.py">
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/8_goolenet_v3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -277,7 +352,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/goolenet_v1.py">
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/6_goolenet_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="106" column="26" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
@@ -287,7 +362,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/goolenet_v2.py">
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/7_goolenet_v2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="127" column="35" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
@@ -297,7 +372,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet_v1.py">
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/9_resnet_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2106">
           <folding>
@@ -306,12 +381,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/resnet_v2.py">
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="73" column="53" lean-forward="true" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
+        <state relative-caret-position="-1512">
+          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="546" selection-start-line="546" selection-end-line="546" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/11_Stochastic_Depth_ResNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4212">
+          <caret line="226" column="16" lean-forward="true" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/10_resnet_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/12_WideResNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/14_Inception_ResNet_v1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/13_Inception_v4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="224" column="38" lean-forward="true" selection-start-line="224" selection-start-column="38" selection-end-line="224" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/14_Inception_ResNet_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2851">
+          <caret line="284" column="20" lean-forward="true" selection-start-line="284" selection-start-column="20" selection-end-line="284" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/15_fractalnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4282">
+          <caret line="210" column="18" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNN_on_cifar_ByPytorch/16_ResNetXt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="98" column="34" lean-forward="true" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>
       </provider>
