@@ -34,4 +34,61 @@ Implement all convolutional neural networks
 * [Deep Residual Learning for Image Recognition (Kaiming He -2015)](https://arxiv.org/abs/1512.03385)
 
 **ResNet v2：**
-* [Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027)
+* [Identity Mappings in Deep Residual Networks(Kaiming He -2016)](https://arxiv.org/abs/1603.05027)
+
+**Stochastic Depth：**
+* [Deep Networks with Stochastic Depth (Huang Gao 2016)](https://arxiv.org/abs/1603.09382v1?utm_content=bufferbf6d7&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+
+**WideResNet：**
+* [Wide Residual Networks (Sergey Zagoruyko 2016)](https://arxiv.org/abs/1605.07146)
+
+**RiR：**
+* [Resnet in Resnet: Generalizing Residual Architectures (Sasha Targ 2016)](https://arxiv.org/abs/1603.08029)
+
+**Inception v4、Inception-ResNet v1 and Inception-ResNet v2：**
+* [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning (Christian Szegedy 2016)](https://arxiv.org/abs/1602.07261)
+
+**FractalNet：**
+* [FractalNet: Ultra-Deep Neural Networks without Residuals (Gustav Larsson 2016)](https://arxiv.org/abs/1605.07648)
+
+**ResNeXt：**
+* [Aggregated Residual Transformations for Deep Neural Networks (Saining Xie 2016)](https://arxiv.org/abs/1611.05431)
+
+**DenseNet：**
+* [Densely Connected Convolutional Networks (wang Gao 2017)](https://arxiv.org/abs/1608.06993)
+
+**DPN：**
+* [Dual Path Networks (Yunpeng Chen, 颜水成（360） 2017)](https://arxiv.org/abs/1707.01629)
+
+**PyramidNet：**
+* [Deep Pyramidal Residual Networks (Dongyoon Han, Jiwhan Kim 2017)](https://arxiv.org/abs/1610.02915)
+
+**SENet：**
+* [Squeeze-and-Excitation Networks (Hu jie 2017)](https://arxiv.org/abs/1709.01507)
+
+**SqueezeNet：**
+* [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size (Berkeley and Stanford 2017)](https://arxiv.org/abs/1602.07360v3)
+
+**MobileNets V1：**
+* [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications (Google 2017)](https://arxiv.org/abs/1704.04861)
+
+**MobileNets V2：**
+* [MobileNetV2: Inverted Residuals and Linear Bottlenecks (Google 2018)](https://arxiv.org/abs/1801.04381)
+
+**ShuffleNet V1：**
+* [ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices (Xiangyu Zhang,Jian Sun 2017)](https://arxiv.org/abs/1707.01083)
+
+**ShuffleNet V2：**
+* [ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design (Ningning Ma, Xiangyu Zhang 2018)](https://arxiv.org/abs/1807.11164)
+
+**MobileNet V3：**
+* [Searching for MobileNetV3 (Google 2019)](https://arxiv.org/abs/1905.02244?context=cs)
+
+**EfficientNet：**
+* [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (Google 2019)](https://arxiv.org/abs/1905.11946)
+
+**GhostNet：**
+* [GhostNet: More Features from Cheap Operations (Kai Han, Yunhe Wang 2020)](https://arxiv.org/abs/1911.11907)
+
+**RegNet：**
+* [Designing Network Design Spaces (Ilija Radosavovic Kaiming He 2020)](https://arxiv.org/pdf/2003.13678.pdf)
