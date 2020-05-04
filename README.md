@@ -10,16 +10,13 @@ Implement all convolutional neural networks
 * [Gradient-Based Learning Applied to Document Recognition (Y. LeCun -1998)](https://www.researchgate.net/profile/Yann_Lecun/publication/2985446_Gradient-Based_Learning_Applied_to_Document_Recognition/links/0deec519dfa1983fc2000000/Gradient-Based-Learning-Applied-to-Document-Recognition.pdf)
 
 **AlexNet：**
-* ImageNet Classification with Deep Convolutional Neural Networks (Alex Krizhevsky -2012)
-* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/100567009)
+* [ImageNet Classification with Deep Convolutional Neural Networks (Alex Krizhevsky -2012)](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 
 **ZFNet：**
-* Visualizing and Understanding Convolutional Networks (Matthew D. Zeiler -2013)
-* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/100678119)
+* [Visualizing and Understanding Convolutional Networks (Matthew D. Zeiler -2013)](https://arxiv.org/abs/1311.2901)
 
-**NIN：**
-* Network In Network (Min Lin -2014)
-* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/101370687)
+**NIN：** 
+* [Network In Network (Min Lin -2014)](https://arxiv.org/abs/1312.4400)
 
 **GoogleLeNet：**
 * Going deeper with convolutions (Christian Szegedy -2014)
