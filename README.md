@@ -18,26 +18,20 @@ Implement all convolutional neural networks
 **NIN：** 
 * [Network In Network (Min Lin -2014)](https://arxiv.org/abs/1312.4400)
 
-**GoogleLeNet：**
-* Going deeper with convolutions (Christian Szegedy -2014)
-* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/101370687)
+**GoogleLeNet(Inception v1)：**
+* [Going deeper with convolutions (Christian Szegedy -2014)](https://research.google/pubs/pub43022/)
 
 **VGGNet：**
-* Very Deep Convolutional Network For Large-Scale Image Recognition (Karen Simonyan -2014)
-* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/101440742)
+* [Very Deep Convolutional Network For Large-Scale Image Recognition (Karen Simonyan -2014)](https://arxiv.org/abs/1409.1556)
 
-**GoogLeNet v2：**
-* Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift (Sergey Ioffe -2015)
+**Inception v2：**
+* [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift (Sergey Ioffe -2015)](https://arxiv.org/abs/1502.03167)
 
-**GoogLeNet v3：**
-* Rethinking the Inception Architecture for Computer Vision (Christian Szegedy -2015)
+**Inception v3：**
+* [Rethinking the Inception Architecture for Computer Vision (Christian Szegedy -2015)](https://arxiv.org/abs/1512.00567)
 
-**ResNet：**
-* Deep Residual Learning for Image Recognition (Kaiming He -2015)
+**ResNet v1：**
+* [Deep Residual Learning for Image Recognition (Kaiming He -2015)](https://arxiv.org/abs/1512.03385)
 
-
-**Paper Collection：**
-* [Paper](https://pan.baidu.com/s/1mkm8hen1Zb2prl96q3s-1A)
-* E-mail：gyt0713@126.com
-* [CSDN](https://blog.csdn.net/gyt15663668337)
-* [Blog](https://guoyuantao.github.io/)
+**ResNet v2：**
+* [Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027)
