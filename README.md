@@ -2,12 +2,12 @@
 Implement all convolutional neural networks
 
 **CNN Origin：**
-* Neocognitron: A Self-organizing Neural Network Model for a Mechanism of Pattern Recognition Unaffected by Shift in Position (Kunihiko Fukushima -1980)
+* [Neocognitron: A Self-organizing Neural Network Model for a Mechanism of Pattern Recognition Unaffected by Shift in Position (Kunihiko Fukushima -1980)](https://link.springer.com/article/10.1007/BF00344251)
+
 
 **LeNet5：**
-* Backpropagation Applied to Handwritten Zip Code Recognition (Y. LeCun -1989)
-* Gradient-Based Learning Applied to Document Recognition (Y. LeCun -1998)
-* [CSDN Note](https://blog.csdn.net/gyt15663668337/article/details/100084222)
+* [Backpropagation Applied to Handwritten Zip Code Recognition (Y. LeCun -1989)](https://ieeexplore.ieee.org/document/6795724)
+* [Gradient-Based Learning Applied to Document Recognition (Y. LeCun -1998)](https://www.researchgate.net/profile/Yann_Lecun/publication/2985446_Gradient-Based_Learning_Applied_to_Document_Recognition/links/0deec519dfa1983fc2000000/Gradient-Based-Learning-Applied-to-Document-Recognition.pdf)
 
 **AlexNet：**
 * ImageNet Classification with Deep Convolutional Neural Networks (Alex Krizhevsky -2012)
